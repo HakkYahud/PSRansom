@@ -21,7 +21,7 @@ function Show-Banner {
    Write-Host " |  __/ ___) |  _ < (_| | | | \__ \ (_) | | | | | | " -ForegroundColor Blue
    Write-Host " |_|   |____/|_| \_\__,_|_| |_|___/\___/|_| |_| |_| " -ForegroundColor Blue
    Write-Host                                                            
-   Write-Host "  ----------------- by @JoelGMSec ----------------  " -ForegroundColor Green }
+   Write-Host "  -------------- modified by HakkYahud -------------  " -ForegroundColor Green }
 
 # Help
 function Show-Help {
