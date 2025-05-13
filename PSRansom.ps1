@@ -324,7 +324,7 @@ if ($Mode -eq "-d") {
    DecryptFiles ; CheckFiles ; sleep 1 }
  
 else {
-   Write-Host ; Write-Host "[!] Simulating ransomware infection on $DirectoryTarget directory.." -ForegroundColor Red
+   Write-Host ; Write-Host "[!] Simulating ransomware infection on $Directory directory.." -ForegroundColor Red
    Write-Host "[+] Checking communication with Command & Control Server.." -ForegroundColor Blue
    $C2Status = GetStatus ; sleep 1
 
